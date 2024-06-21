@@ -1,8 +1,3 @@
-# React + Vite
+Eat and Split
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+A convenient web application developed with React and styled using CSS, aimed at simplifying the process of splitting bills when dining out with friends or family. Users can input the total bill amount, specify the number of people, and optionally add custom amounts for each person if needed. The app calculates each person's share, including tax and tip, ensuring a fair and hassle-free division of expenses.

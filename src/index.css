@@ -25,7 +25,17 @@ body {
   justify-content: center;
 }
 
+.app-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .app {
+  width: 100%;
   min-height: 66vh;
   display: grid;
   grid-template-columns: 34rem 44rem;
@@ -62,7 +72,6 @@ body {
   grid-template-columns: 4.8rem 1fr auto;
   align-items: center;
   column-gap: 1.6rem;
-
   padding: 1.2rem;
   border-radius: 7px;
   transition: 0.5s;
@@ -112,7 +121,6 @@ form {
   display: grid;
   align-items: center;
   gap: 1.2rem;
-
   background-color: var(--color-lightest);
   border-radius: 7px;
 }
@@ -122,6 +130,7 @@ form {
   margin-bottom: 1.6rem;
   padding: 1.2rem;
 }
+
 .form-split-bill {
   grid-template-columns: 1fr 12rem;
   padding: 3.2rem 4rem;
@@ -132,8 +141,6 @@ label {
 }
 
 label::first-letter {
-  
-  
   font-size: 1.8rem;
 }
 
@@ -166,4 +173,66 @@ form h2 {
   text-transform: uppercase;
   letter-spacing: -0.5px;
   margin-bottom: 1.6rem;
+}
+
+/* Estilos para el Título */
+.title {
+  font-size: 3.2rem;
+  color: var(--color-dark);
+  text-align: center;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+}
+
+/* Estilos responsive para el Título */
+@media (max-width: 768px) {
+  html {
+    font-size: 50%;
+  }
+
+  .app {
+    grid-template-columns: 1fr;
+    row-gap: 2rem;
+  }
+
+  .sidebar {
+    width: 100%;
+  }
+
+  .sidebar li {
+    grid-template-columns: 4.8rem 1fr;
+    grid-template-rows: auto auto;
+    gap: 0.8rem;
+  }
+
+  .sidebar li .button {
+    grid-row: 3;
+    grid-column: 1 / -1;
+    justify-self: center;
+    width: 100%;
+  }
+
+  form {
+    padding: 2rem;
+  }
+
+  .form-add-friend,
+  .form-split-bill {
+    grid-template-columns: 1fr;
+  }
+
+  .form-split-bill {
+    padding: 2rem;
+  }
+
+  form .button {
+    grid-column: 1;
+    width: 100%;
+  }
+
+  .title {
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+  }
 }
